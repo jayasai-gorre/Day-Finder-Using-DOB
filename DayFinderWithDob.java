@@ -24,7 +24,7 @@ public class DayFinderWithDob {
 
     int day = (int) code % 7;
     boolean leap = checkLeap(year);
-    if (leap == true) {
+    if (leap && month < 3) {
       day--;
     }
     System.out.print(date + "/" + month + "/" + year + " is ");
